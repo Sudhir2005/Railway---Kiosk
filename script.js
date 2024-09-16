@@ -13,7 +13,10 @@ const locations = {
     restroom: [13.0785, 80.2610], // Example coordinates for Restroom
     platform: [13.0790, 80.2620], // Example coordinates for Platform
     foodCourt: [13.0780, 80.2625], // Example coordinates for Food Court
-    ticketCounter: [13.0795, 80.2615] // Example coordinates for Ticket Counter
+    ticketCounter: [13.0795, 80.2615], // Example coordinates for Ticket Counter
+    banking: [13.0790, 80.2630], // Example coordinates for Banking
+    atm: [13.0788, 80.2628], // Example coordinates for ATM Services
+    nursingRoom: [13.0786, 80.2618] // Example coordinates for Nursing Room
 };
 
 function initMap() {
@@ -115,6 +118,9 @@ function changeLanguage(lang) {
             platforms: "Platforms",
             foodCourt: "Food Court",
             ticketCounter: "Ticket Counter",
+            banking: "Banking",
+            atm: "ATM Services",
+            nursingRoom: "Nursing Room",
             accessibilityButton: "Accessibility Settings",
             emergencyButton: "Emergency Assistance"
         },
@@ -126,6 +132,9 @@ function changeLanguage(lang) {
             platforms: "प्लेटफ़ॉर्म",
             foodCourt: "फूड कोर्ट",
             ticketCounter: "टिकट काउंटर",
+            banking: "बैंकिंग",
+            atm: "एटीएम सेवाएं",
+            nursingRoom: "नर्सिंग रूम",
             accessibilityButton: "सुगमता सेटिंग्स",
             emergencyButton: "आपातकालीन सहायता"
         },
@@ -136,7 +145,10 @@ function changeLanguage(lang) {
             nearestRestroom: "அடுத்த சிறுசெயலி",
             platforms: "தண்டவாளங்கள்",
             foodCourt: "உணவு கூடம்",
-            ticketCounter: "டிக்கெட் அவசரத்திற்கான",
+            ticketCounter: "டிக்கெட் கவுண்டர்",
+            banking: "வங்கிங்கு",
+            atm: "எ.டி.எம். சேவைகள்",
+            nursingRoom: "அரசு அறை",
             accessibilityButton: "அணுகுமுறை அமைப்புகள்",
             emergencyButton: "அவசர உதவி"
         }
@@ -153,6 +165,9 @@ function changeLanguage(lang) {
         buttons[1].textContent = translation.platforms;
         buttons[2].textContent = translation.foodCourt;
         buttons[3].textContent = translation.ticketCounter;
+        buttons[4].textContent = translation.banking;
+        buttons[5].textContent = translation.atm;
+        buttons[6].textContent = translation.nursingRoom;
         
         document.getElementById('accessibility-btn').textContent = translation.accessibilityButton;
         document.getElementById('emergency-btn').textContent = translation.emergencyButton;
