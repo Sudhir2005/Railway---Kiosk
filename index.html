@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiosk Interface with OpenStreetMap</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Include Leaflet.js CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
+    <!-- Include Leaflet.js JavaScript -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Railway Station Navigation</h1>
+            <select id="language" aria-label="Language">
+                <option value="en">English</option>
+                <option value="hi">हिन्दी</option>
+                <option value="ta">தமிழ்</option>
+            </select>
+        </header>
+        
+
+        <!-- Map container -->
+        <div class="map-container">
+            <div id="map" class="map"></div>
+        </div>
+
+        <div class="controls">
+            <input type="text" id="search-bar" placeholder="Search for location..." aria-label="Search">
+            <button id="search-btn">Search</button>
+
+            <div class="quick-access">
+                <button class="quick-btn">Nearest Restroom</button>
+                <button class="quick-btn">Platforms</button>
+                <button class="quick-btn">Food Court</button>
+                <button class="quick-btn">Ticket Counter</button>
+            </div>
+        </div>
+        
+
+        <footer>
+            <button id="accessibility-btn">Accessibility Settings</button>
+            <button id="emergency-btn">Emergency Assistance</button>
+        </footer>
+
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>
